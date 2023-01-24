@@ -56,7 +56,7 @@ def shared_rucksack_badge(input_file_name):
   
   total_badge_priority = 0
   for shared_character in shared_characters:
-    if shared_character.isupper(): # If it is an uppercase character
+    if shared_character.isupper(): # If it is an uppercase character 
       priority = ord(shared_character) - ord('a') # Find out the value of the ASCII character
       total_badge_priority += (52 + priority + 7) # Calculate the correct value and add it to the total, A is -32 and Z is -7, so want 52 + priority, then +7 for the offset at the end
     else:
